@@ -3,17 +3,12 @@ public class EmpWageBuilder {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int IS_PRESENT = 1;
+		int Wage_Per_Hour = 20;
+		int Full_day_Hour = 8;
 		
-		double empCheck = Math.floor(Math.random() * 10) % 2;
+		double EmpdailyWage = (Wage_Per_Hour * Full_day_Hour);
 		
-		if (empCheck == IS_PRESENT)
-			
-			System.out.println("Employee is present");
-		
-		else
-			
-			System.out.println("Employee is absent");
+		System.out.println("Employee daily wage is = "+EmpdailyWage);
 	}
 
 }
