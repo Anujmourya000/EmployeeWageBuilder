@@ -4,7 +4,8 @@ public class EmpWageBuilder {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int Employee = 1;
+		int Full_time_employee = 1;
+		int Part_time_employee = 2;
 		int Full_time_Wage = 20;
 		int Full_time_Hour = 8;
 		int Part_time_Hour = 4;
@@ -12,20 +13,25 @@ public class EmpWageBuilder {
 		// Total working days for a month
 		int Working_days = 20;
 		
-		switch (Employee) {
+		// n is maximum working hours
+		int n= 100;
 		
-			case 1:
-				System.out.println("Employee is Full Time Present");
-				
-				double Emp_Wage1 = (Working_days * Full_time_Wage * Full_time_Hour);
-				System.out.println("Full Time Employee Wage for a month is = " +Emp_Wage1 );
+		// d is maximum working days
+		int d=20;
+		
+		for(int i=1; i<=n; i++) {
 			
-			default:
-				System.out.println("Employee is Part Time Present");
+			for (int j=1; j<=d; j++) {
 				
-				double Emp_Wage2 = (Working_days * Full_time_Wage * Part_time_Hour);
-				System.out.println("Part Time Employee Wage for a month is = " +Emp_Wage2);
+				double Emp_Wage1 = (j * Full_time_Wage * i);
+				
+				System.out.println("Full Time Employee Wage for a month is = " +Emp_Wage1 );
+			}
+			
+		}
+		
+		
+		
 		}
 	}
 
-}
